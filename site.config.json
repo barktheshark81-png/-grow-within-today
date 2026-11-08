@@ -1,0 +1,12 @@
+{
+  "siteUrl": "",
+  "basePath": "/",
+  "pages": [
+    { "file": "index.html",                "nav": "home",    "priority": "1.0" },
+    { "file": "about/index.html",          "nav": "about",   "priority": "0.8" },
+    { "file": "topics/index.html",         "nav": "topics",  "priority": "0.9" },
+    { "file": "contact/index.html",        "nav": "contact", "priority": "0.6" },
+    { "file": "privacy-policy/index.html", "nav": "privacy", "priority": "0.4" },
+    { "file": "imprint/index.html",        "nav": "imprint", "priority": "0.3" }
+  ]
+}
