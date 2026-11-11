@@ -307,6 +307,12 @@ strong { font-weight: 700; color: var(--navy); }
 @media (min-width: 56em) { .prose-grid { grid-template-columns: 4fr 7fr; gap: 5rem; } .prose-grid > h2 { position: sticky; top: calc(var(--header-h) + 2rem); align-self: start; } }
 .prose-grid + .prose-grid { margin-top: var(--section); }
 .prose-grid h2 { font-size: var(--step-3); }
+/* Über uns: Abschnittsüberschriften scrollen normal mit ihrem Inhalt (kein Sticky).
+   Nur Desktop betroffen – mobil ist das Layout einspaltig und bleibt unverändert. */
+@media (min-width: 56em) {
+  .page-about .prose-grid > h2 { position: static; top: auto; }
+  .page-about .prose-grid + .prose-grid { margin-top: clamp(4.5rem, 2.5rem + 3vw, 5.5rem); }
+}
 
 .principles { list-style: none; padding: 0; margin: 0; display: grid; gap: 2rem; }
 .principles h3 { margin-bottom: .3rem; }
