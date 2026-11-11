@@ -127,8 +127,10 @@ strong { font-weight: 700; color: var(--navy); }
 
 .brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--snow); text-decoration: none; }
 .brand:hover { color: var(--snow); }
-.brand__mark { width: 2rem; height: 2rem; flex: none; }
-.brand__name { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; letter-spacing: .005em; line-height: 1; }
+/* Logo: finales kompaktes Logo (assets/brand/logo/gwt-kompakt-hell.svg) */
+.brand__logo { display: block; width: min(219px, calc(100vw - 9.5rem)); height: auto; }
+@media (min-width: 56em) { .brand__logo { width: 255px; } }
+.brand__logo--footer, .site-footer .brand__logo { width: 273px; max-width: 100%; }
 
 .nav-toggle {
   display: inline-flex; align-items: center; gap: .55rem;
